@@ -83,9 +83,9 @@ const Cart = ({ cartItems }) => {
                     Rs.{" "}
                     {(item.price * quantities[index]).toLocaleString()}
                   </td>
-                  <td>
-                    <button className="remove-item"><FaTrash /></button>
-                  </td>
+                  <Link to="/cart" className="remove-item">
+  Remove
+</Link>
                 </tr>
               ))}
             </tbody>
