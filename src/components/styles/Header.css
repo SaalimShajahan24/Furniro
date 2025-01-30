@@ -1,0 +1,133 @@
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+  width: 40px;
+}
+
+.logo span {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Navigation Menu */
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: black;
+  padding: 10px;
+}
+
+.navigation a:hover {
+  color: #d4a353;
+}
+
+/* Icons Styling */
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons img {
+  height: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Cart Counter */
+.cart-container {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .navigation {
+    display: none; /* Hide default nav */
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navigation.show {
+    display: flex; /* Show when toggled */
+  }
+
+  .icons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .logo img {
+    height: 40px;
+    width: 30px;
+  }
+
+  .logo span {
+    font-size: 20px;
+  }
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}

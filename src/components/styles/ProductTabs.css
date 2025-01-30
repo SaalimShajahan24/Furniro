@@ -1,0 +1,57 @@
+.product-tabs {
+    margin-top: 40px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    color: #9F9F9F; /* Default grey text */
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.tab.active {
+    color:; /* Active tab text color */
+    border-bottom: 2px solid #c19a5f; /* Active tab underline */
+}
+
+.tab:hover {
+    color:black; /* Hover text color */
+}
+
+.tab-content {
+    text-align: center; /* Centers the tab content */
+    margin: 0 auto; /* Centers the container */
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-family: poppins, sans-serif;
+    color: #9F9F9F;
+    line-height: 1.8;
+    max-width: 800px; /* Restricts the content width for better readability */
+    text-align: justify;
+}
+
+.tab-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.tab-image {
+    width: 1239px;
+    height: 348px;
+    object-fit: cover; /* Ensures the image fills the dimensions */
+    border-radius: 10px; /* Adds rounded corners */
+}

@@ -1,0 +1,140 @@
+.footer-container {
+  background-color: #fff;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Footer Grid Layout */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  gap: 50px;
+}
+
+/* Footer Section Titles */
+.footer-section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+/* Address Text */
+.address {
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 16px;
+  font-weight: normal;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Footer Links */
+.footer-section ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-link {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin: 15px 0; /* Adjusted spacing between links */
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: #555;
+}
+
+/* Newsletter Input */
+.newsletter-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Email Input */
+.email-input {
+  font-size: 14px;
+  color: #777;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+  padding: 5px 0;
+  width: 200px;
+}
+
+.email-input::placeholder {
+  color: #bbb;
+}
+
+/* Subscribe Button */
+.subscribe {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.subscribe:hover {
+  color: #333;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Footer Note */
+.footer-note {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+/* ===== Responsive Design ===== */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .footer-content {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+      gap: 30px;
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .footer-content {
+      grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
+      text-align: center;
+  }
+
+  .newsletter-input {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .email-input {
+      width: 100%; /* Full width on mobile */
+      text-align: center;
+  }
+
+  .footer-bottom {
+      text-align: center;
+  }
+}

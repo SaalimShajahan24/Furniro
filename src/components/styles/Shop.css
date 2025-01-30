@@ -1,0 +1,189 @@
+/* Shop Page Styling */
+.shop-page {
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+/* Header Section */
+.shop-header {
+  background-size: cover;
+  background-position: center;
+  height: 316px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+
+.shop-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  z-index: 0;
+}
+
+.shop-header-content {
+  z-index: 1;
+  position: relative;
+}
+
+.shop-header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.shop-header nav {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Shop Content */
+.shop-content {
+  padding: 15px;
+  background-color: #f9f1e7;
+}
+
+/* Controls Section */
+.shop-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+/* Filter Button */
+.filter-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Grid Icons */
+.grid-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.grid-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Results Text */
+.results-text {
+  font-size: 14px;
+  color: #666;
+  margin-left: auto;
+}
+
+/* Show and Sort Options */
+.show-options,
+.sort-options {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.show-options select,
+.sort-options select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .shop-controls {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+  }
+
+  .results-text {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-header h1 {
+      font-size: 28px;
+  }
+
+  .shop-header nav {
+      font-size: 14px;
+  }
+
+  .shop-controls {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .show-options,
+  .sort-options {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-header {
+      height: 250px;
+  }
+
+  .shop-header h1 {
+      font-size: 24px;
+  }
+
+  .shop-header nav {
+      font-size: 12px;
+  }
+
+  .shop-controls {
+      padding: 10px;
+      gap: 10px;
+  }
+
+  .filter-button {
+      font-size: 12px;
+  }
+
+  .grid-icons img {
+      width: 20px;
+      height: 20px;
+  }
+
+  .show-options select,
+  .sort-options select {
+      font-size: 12px;
+      padding: 4px;
+  }
+
+  .results-text {
+      font-size: 12px;
+      text-align: center;
+  }
+}

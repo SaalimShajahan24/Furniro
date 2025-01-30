@@ -1,0 +1,278 @@
+.product-detail {
+  /* padding: 20px; */
+  font-family: Arial, sans-serif;
+  /* max-width: 1200px;
+  margin: 0 auto; */
+}
+
+.product-breadcrumb-detail {
+  margin-left: 0px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+  background-color: #f9f1e7;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
+
+.breadcrumb span {
+  margin-right: 5px;
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+  margin: 0 70px;
+}
+
+.product-images {
+  display: flex;
+  gap: 10px;
+}
+
+.thumbnail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.main-image img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-info {
+  flex: 2;
+  color: #333;
+}
+
+.product-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reviews .stars {
+  color: #ffc107; /* Yellow star color */
+  margin-right: 5px;
+}
+
+.customer-review {
+  font-size: 14px;
+  color: #666;
+}
+
+.product-description {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.size-options {
+  margin: 20px 0;
+}
+
+.size-options .sizes {
+  display: flex;
+  gap: 10px;
+}
+
+.size-button {
+  background-color: #f9f1e7; /* Default button background */
+  color: black; /* Default text color */
+  border: none; /* No border */
+  padding: 12px 20px; /* Increased padding for larger button size */
+  margin: 0 10px; /* Added more spacing between buttons */
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px; /* Rounded corners for all buttons */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  
+}
+.size-button:hover{
+  background-color: #a8804f; /* Hover background color */
+    color: white;
+}
+
+.size-button.active {
+  background-color: #c19a5f;
+  color: white;
+  border: none;
+}
+
+.color-options {
+  margin: 20px 0;
+}
+
+.color-options .colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color.purple {
+  background-color: #9b59b6;
+}
+
+.color.black {
+  background-color: #000000;
+}
+
+.color.gold {
+  background-color: #c19a5f;
+}
+
+.action-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between quantity, Add to Cart, and Compare buttons */
+  margin: 20px 0;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;;
+  background-color: white;
+  overflow: hidden;
+}
+
+.quantity-button {
+  padding: 10px 20px;
+  border: none;
+  background-color:white;
+  color:;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-button:hover {
+  background-color: #fafafa;
+}
+
+.quantity-value {
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  background-color: ;
+  color: black;
+}
+
+.action-button {
+  flex: 1; /* Makes buttons uniform in width */
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #c19a5f;
+  color: white;
+  border: none;
+}
+.add-to-cart {
+  background-color: #c19a5f;
+  color: white;
+}
+
+.compare-button {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.product-meta {
+  margin-top: 20px;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Equal spacing between elements */
+}
+
+.product-meta p {
+  margin: 0px 0;
+  color: #aba4a4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-meta p span:first-child {
+  flex: 1; /* Ensures equal spacing between label and value */
+}
+
+.product-meta p span:last-child {
+  flex: 2; /* Adjust this value to balance spacing */
+  text-align: left; /* Align value text consistently */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Equal gap between social icons */
+  margin-top: 0px; /* Spacing between social icons and other sections */
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.social-icons h4 {
+  font-weight: 500;
+  color: #aba4a4;
+  margin-right: 0px; /* Spacing between label and icons */
+}
+
+/* Added "Share" column header */
+.social-icons-wrapper {
+  margin-top: 20px;
+}
+
+.social-icons-wrapper h4 {
+  font-size: 15px;
+  font-weight: bold; /* Defined weight for consistency */
+  color: #a80f0f;
+  margin-bottom: 10px;
+}
