@@ -1,30 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import "./styles/Blog.css";
-import FeaturesRow from "./FeaturesRow"; // Import FeaturesRow component
+import FeaturesRow from "./FeaturesRow"; 
 import Footer from "./Footer";
-import { Link } from "react-router-dom"; // Import Link
-
 
 const Blog = () => {
   return (
-    <div className="shop-page">
-    {/* Header Section */}
-    <header
-      style={{
-        backgroundImage: `url("/images/sh1.jpeg")`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        height: "316px",
-      }}
-      className="shop-header"
-    >
-      <div className="shop-header-content">
-        <h1>Blog</h1>
-        <nav>
-          <span>Home</span> <span>&gt;</span> <span>Blog</span>
-        </nav>
-      </div>
-    </header>
+    <div className="blog-page">
+      {/* Header Section */}
+      <header
+        style={{
+          backgroundImage: `url("/images/sh1.jpeg")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "316px",
+        }}
+        className="blog-header"
+      >
+        <div className="blog-header-content">
+          <h1>Blog</h1>
+          <nav>
+            <Link to="/">Home</Link> <span>&gt;</span> <span>Blog</span>
+          </nav>
+        </div>
+      </header>
 
       {/* Blog Content */}
       <div className="blog-content">
@@ -49,11 +48,11 @@ const Blog = () => {
             </div>
             <h2>Going all-in with millennial design</h2>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
             </p>
-            <a href="#" className="read-more">
+            <Link to="/blog/going-all-in-with-millennial-design" className="read-more">
               Read more
-            </a>
+            </Link>
           </div>
 
           {/* Blog Post 2 */}
@@ -75,11 +74,11 @@ const Blog = () => {
             </div>
             <h2>Exploring new ways of decorating</h2>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
             </p>
-            <a href="#" className="read-more">
+            <Link to="/blog/exploring-new-ways-of-decorating" className="read-more">
               Read more
-            </a>
+            </Link>
           </div>
 
           {/* Blog Post 3 */}
@@ -101,60 +100,54 @@ const Blog = () => {
             </div>
             <h2>Handmade pieces that took time to make</h2>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
             </p>
-            <Link to="/blog/post-name" className="read-more">
-Read more
-</Link>
+            <Link to="/blog/handmade-pieces-that-took-time-to-make" className="read-more">
+              Read more
+            </Link>
           </div>
 
           {/* Pagination */}
-          
-          <div className="pagination-container"></div>
-          <div className="pagination">
-            <span className="page-number active">1</span>
-            <span className="page-number">2</span>
-            <span className="page-number">3</span>
-            <span className="page-next">Next</span>
+          <div className="pagination-container">
+            <div className="pagination">
+              <span className="page-number active">1</span>
+              <span className="page-number">2</span>
+              <span className="page-number">3</span>
+              <span className="page-next">Next</span>
+            </div>
           </div>
         </div>
 
         {/* Sidebar */}
         <div className="blog-sidebar">
-          
-          {/* Sidebar */}
-<div className="blog-sidebar">
-  {/* Search Box */}
-  <div className="search-box">
-    <input type="text" placeholder="Search"  />
-    {/* <button className="search-icon-btn">
-      <img src="/svgs/akar-icons_search.svg" alt="Search Icon" />
-    </button> */}
-  </div>
+          {/* Search Box */}
+          <div className="search-box">
+            <input type="text" placeholder="Search" />
+          </div>
 
-  {/* Categories */}
-  <div className="categories">
-    <h3>Categories</h3>
-    <ul>
-      <li>
-        <span>Crafts</span> <span>2</span>
-      </li>
-      <li>
-        <span>Design</span> <span>8</span>
-      </li>
-      <li>
-        <span>Handmade</span> <span>7</span>
-      </li>
-      <li>
-        <span>Interior</span> <span>1</span>
-      </li>
-      <li>
-        <span>Wood</span> <span>6</span>
-      </li>
-    </ul>
-  </div>
-</div>
+          {/* Categories */}
+          <div className="categories">
+            <h3>Categories</h3>
+            <ul>
+              <li>
+                <span>Crafts</span> <span>2</span>
+              </li>
+              <li>
+                <span>Design</span> <span>8</span>
+              </li>
+              <li>
+                <span>Handmade</span> <span>7</span>
+              </li>
+              <li>
+                <span>Interior</span> <span>1</span>
+              </li>
+              <li>
+                <span>Wood</span> <span>6</span>
+              </li>
+            </ul>
+          </div>
 
+          {/* Recent Posts */}
           <div className="recent-posts">
             <h3>Recent Posts</h3>
             <ul>
@@ -197,6 +190,7 @@ Read more
           </div>
         </div>
       </div>
+
       {/* Features Section */}
       <FeaturesRow />
 
